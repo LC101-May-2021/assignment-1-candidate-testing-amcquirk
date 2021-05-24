@@ -27,7 +27,7 @@ if (candidateAnswer==correctAnswer) {
   console.log("your answer is correct");
 } else {console.log("your answer is incorrect");
 
-}}
+}};
 
 function gradeQuiz(candidateAnswers) {
 
