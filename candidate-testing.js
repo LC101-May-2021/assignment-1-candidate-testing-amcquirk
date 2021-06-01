@@ -20,7 +20,7 @@ console.log("Hello, "+candidateName+"!");
 
 };
 
-function askQuestion() /*{let candidateAnswer=input.question("1) Who was the first American woman in space? ");
+function askQuestion() {/*{let candidateAnswer=input.question("1) Who was the first American woman in space? ");
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 
 if (candidateAnswer==correctAnswer) {
@@ -29,8 +29,8 @@ if (candidateAnswer==correctAnswer) {
 
 }}
 */
-
-{for (let i=0; i<questions.length; i++){
+}
+for (let i=0; i<questions.length; i++){
   let answer=input.question(questions[i]);
   candidateAnswers.push(answer);
 
@@ -79,7 +79,7 @@ Correct answer: ${correctAnswers[4]}`);
 
 }
 */
-function gradeQuiz(candidateAnswers)
+function gradeQuiz(candidateAnswers){
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
