@@ -23,9 +23,27 @@ function askQuestion() {
     console.log(`Correct answer: ${correctAnswers[i]}`);
   }
 }
+
 function gradeQuiz(candidateAnswers){
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-  let grade;
+
+let numberCorrect=0;
+
+for (let i=0;i<5;i++){
+  if (correctAnswers[i].toUpperCase()==candidateAnswers[i].toUpperCase()) {
+    numberCorrect++;
+  }
+}
+  let grade=(numberCorrect/questions.length)*100;
+
+  console.log(`>>> Overall Grade: ${grade}% (${numberCorrect} out of ${correctAnswers.length} responses correct) <<<`)
+
+  if(grade<80) {
+    console.log(`>>> STATUS: FAILED <<<`);
+  } else {
+    console.log(`>>> STATUS: PASSED <<<`);
+  }
+  
   
   return grade;
 }
