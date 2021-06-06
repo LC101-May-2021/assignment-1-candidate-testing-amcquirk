@@ -47,6 +47,8 @@ for (let i=0;i<5;i++){
   
   return grade;
 }
+
+
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
